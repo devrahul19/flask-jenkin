@@ -3,7 +3,7 @@ CONTAINER_NAME := my-flask-container
 
 .PHONY: build
 build:
-	docker build -t $(IMAGE_NAME) -f /var/lib/jenkins/workspace/Chitkara-Docker-Flask_main/Dockerfile .
+	docker build -t $(IMAGE_NAME) -f /var/lib/jenkins/workspace/Chitkara-Docker-Flask_main@script/*/Dockerfile .
 
 .PHONY: run
 run:
