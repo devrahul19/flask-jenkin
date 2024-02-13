@@ -13,21 +13,21 @@ pipeline {
         {
             steps
             {
-              sh 'make build'
+              sh 'sudo make build'
             }
         }
         stage('Run')
         {
             steps
             {
-              sh 'make run'
+              sh 'sudo make run'
             }
         }
         stage('Test')
         {
             steps
             {
-               sh 'make test'
+               sh 'sudo make test'
             }
         }
     }
