@@ -1,6 +1,6 @@
 FROM python:3.11
 ENV FLASK_RUN_HOST=0.0.0.0
-WORKDIR /var/lib/jenkins/workspace/Chitkara-Docker-Flask_main/
+WORKDIR /home/rahul/flask-jenkin/
 COPY . /
 RUN echo helllooooo
 RUN pip install -r requirements.txt
