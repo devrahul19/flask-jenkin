@@ -6,7 +6,7 @@ pipeline {
         {
             steps
             {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '79f34b8e-8050-4101-86af-059cb4ea393f', url: 'https://github.com/devrahul19/flask-jenkin.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'gitrahul', url: 'https://github.com/devrahul19/flask-jenkin.git']])
             }
         }
         stage('Build')
