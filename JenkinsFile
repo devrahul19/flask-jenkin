@@ -13,51 +13,51 @@ pipeline {
         {
             steps
             {
-                echo 'building'
-             // sh 'sudo make build'
+              sh 'sudo make build'
             }
         }
         stage('Run')
         {
             steps
             {    
-                 echo 'Running'
-             // sh 'sudo make run'
+             sh 'sudo make run'
             }
         }
         stage('Test')
         {
             steps
-            {    echo 'Testing'
-             //   sh 'sudo make test'
+            {   
+               sh 'sudo make test'
             }
         }
         stage('Analyse')
         {
             steps
-            {    echo 'Testing'
-             //   sh 'sudo make test'
+            {    echo 'Analysing'
             }
         }
         stage('Deploy')
         {
             steps
-            {    echo 'Testing'
-             //   sh 'sudo make test'
+            {    echo 'Deploying'
+
             }
         }
         stage('Releasing')
         {
             steps
-            {    echo 'Testing'
-             //   sh 'sudo make test'
+            {    
+                echo 'Releasing'
+
             }
         }
         stage('Monitor')
         {
             steps
-            {    echo 'Testing'
-             //   sh 'sudo make test'
+            {  
+            
+                    echo 'Monitoring'
+
             }
         }
     }
