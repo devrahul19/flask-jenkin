@@ -32,14 +32,14 @@ pipeline {
              //   sh 'sudo make test'
             }
         }
-        stage('Analysing')
+        stage('Analyse')
         {
             steps
             {    echo 'Testing'
              //   sh 'sudo make test'
             }
         }
-        stage('Deploying')
+        stage('Deploy')
         {
             steps
             {    echo 'Testing'
@@ -53,7 +53,7 @@ pipeline {
              //   sh 'sudo make test'
             }
         }
-        stage('Monitoring')
+        stage('Monitor')
         {
             steps
             {    echo 'Testing'
