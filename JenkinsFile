@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+    
+    stages{
+        stage('CheckOut')
+        {
+            steps
+            {
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '79f34b8e-8050-4101-86af-059cb4ea393f', url: 'https://github.com/devrahul19/flask-jenkin.git']])
+            }
+        }
+        stage('Build')
+        {
+            steps
+            {
+              sh 'make build
+            }
+        }
+        stage('Run')
+        {
+            steps
+            {
+              sh 'make run'
+            }
+        }
+        stage('Test')
+        {
+            steps
+            {
+               sh 'make test'
+            }
+        }
+    }
+}
