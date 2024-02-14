@@ -21,8 +21,6 @@ RUN ls
 RUN pwd
 RUN pip install -r requirements.txt  # Install dependencies listed in requirements.txt
 
-COPY . .  # Copy the rest of the application files into the container
-
 EXPOSE 5000
 
 CMD ["python", "src/run.py"]
